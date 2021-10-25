@@ -154,4 +154,68 @@ int main() {
 	return 0;
 }
   
-  
+//Switch Grade Calculator
+	#include <iostream>
+using namespace std;
+
+
+
+
+int main() {
+
+	int grade, result;
+
+	cout << "(100 - 0) Enter the grade: "; cin >> grade;
+	if (cin.fail()) {
+		system("cls");
+		cout << "INVALID INPUT" << endl;
+	}else if (grade >= 0 && grade <= 100) {
+		result = grade / 10;
+		switch (result) {
+		default:
+			system("cls");
+			cout << "INVALID INPUT" << endl;
+			break;
+		case 0:
+		case 1:
+		case 2:
+		case 3:
+			cout << "Entered Grade: " << grade;
+			cout << "\nMark: F";
+			break;
+		case 4:
+			cout << "Entered Grade: " << grade;
+			cout << "\nMark: E";
+			break;
+		case 5:
+			cout << "Entered Grade: " << grade;
+			cout << "\nMark: D";
+			break;
+		case 6:
+			cout << "Entered Grade: " << grade;
+			cout << "\nMark: C";
+			break;
+		case 7:
+			cout << "Entered Grade: " << grade;
+			cout << "\nMark: B";
+			break;
+		case 8:
+			cout << "Entered Grade: " << grade;
+			cout << "\nMark: A";
+			break;
+		case 9:
+			cout << "Entered Grade: " << grade;
+			cout << "\nMark: A";
+			break;
+		case 10:
+			cout << "Entered Grade: " << grade;
+			cout << "\nMark: A";
+			break;
+		}
+	}else {
+		system("cls");
+		cout << "INVALID INPUT" << endl;
+	}
+
+	return 0;
+}
